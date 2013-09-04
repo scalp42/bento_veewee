@@ -35,7 +35,7 @@ UBUNTU_SESSION =
                                                  "ruby.sh",
                                                  "chef-omnibus.sh",
                                                  "chef-gems.sh",
-                                                 "zs-common.sh"
+                                                 "zs-common.sh",
                                                  "cleanup.sh",
                                                  "minimize.sh" ],
                          :kickstart_file => "preseed.cfg",
