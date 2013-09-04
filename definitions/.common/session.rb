@@ -23,7 +23,7 @@ COMMON_SESSION = {
       :chipset => "ich9",
       :hwvirtex => "on",
       :nestedpaging => "on",
-      :audo => "none"
+      :audio => "none"
     }
   }
  
