@@ -16,5 +16,3 @@ EOF
 
 reboot
 sleep 10
-
-exit
