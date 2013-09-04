@@ -1,4 +1,4 @@
-apt-get -y install libyaml-0-2
+apt-get -y install libyaml-0-2 libyaml-dev
 
 # Install Ruby from source in /opt for Vagrant users
 RUBY_VERSION=1.9.3-p448
