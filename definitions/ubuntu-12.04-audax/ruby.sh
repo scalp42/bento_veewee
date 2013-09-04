@@ -1,3 +1,5 @@
+apt-get -y install libyaml-0-2
+
 # Install Ruby from source in /opt for Vagrant users
 RUBY_VERSION=1.9.3-p448
 wget https://ftp.ruby-lang.org/pub/ruby/1.9/ruby-$RUBY_VERSION.tar.gz
