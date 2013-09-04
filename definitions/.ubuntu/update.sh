@@ -1,7 +1,7 @@
 #!/bin/bash -eux
 
-apt-get update
-apt-get -y upgrade
+aptitude update
+aptitude -y full-upgrade
 
 # ensure the correct kernel headers are installed
 apt-get -y install linux-headers-$(uname -r)
@@ -13,3 +13,8 @@ start on networking
 task
 exec /usr/bin/apt-get update
 EOF
+
+reboot
+sleep 10
+
+exit

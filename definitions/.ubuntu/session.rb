@@ -32,6 +32,7 @@ UBUNTU_SESSION =
                                                  "sshd.sh",
                                                  "networking.sh",
                                                  "sudoers.sh",
+                                                 "ppa.sh",
                                                  "cleanup.sh",
                                                  "minimize.sh" ],
                          :kickstart_file => "preseed.cfg",
