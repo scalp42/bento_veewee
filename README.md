@@ -24,15 +24,15 @@ List available baseboxes that can be built:
 
 Build the ubuntu-12.04-audax basebox, export it and add it to Vagrant:
 
-    $ bundle exec thor bento:box create -af ubuntu-12.04-audax
+    $ bundle exec thor bento:box create -af --nogui ubuntu-12.04-audax-chef
 
-Congratulations! You now have `./ubuntu-12.04-audax.box`, a fully functional
+Congratulations! You now have `./ubuntu-12.04-audax-chef.box`, a fully functional
 basebox including Ruby 1.9.3, Chef (as well as fog gem) and packages from zs-common.
 
-Edit your Vagrantfile to use the newly created box:
+Edit your Vagrantfile (for example in `zs-role`) to use the newly created box:
 
-	$ nano Vagrantfile
-	$ zs1.vm.box = "ubuntu-12.04-audax"
+	$ nano zs-role/Vagrantfile
+	$ zs1.vm.box = "ubuntu-12.04-audax-chef"
 
 # How It Works
 
@@ -58,7 +58,6 @@ filename, its source URL, and the MD5 checksum of the file.
 * `chef-client.sh`: Installs Chef and Ruby with
   [Opscode's full stack installer](http://opscode.com/chef/install)
 * `minimize.sh`: Zeroes out the root disk to reduce file size of the box
-* `ruby.sh`: **Deprecated** Use `chef-client.sh`
 * `session.rb`: Baseline session settings for Veewee
 * `sshd.sh`: Adds some sshd configs to speed up vagrant
 * `vagrant.sh`: Installs VirtualBox Guest Additions, adds the Vagrant
