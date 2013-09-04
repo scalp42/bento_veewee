@@ -29,7 +29,6 @@ UBUNTU_SESSION =
                          :os_type_id => 'Ubuntu_64',
                          :postinstall_files => [ "update.sh",
                                                  "vagrant.sh",
-                                                 "nfs.sh",
                                                  "sshd.sh",
                                                  "networking.sh",
                                                  "sudoers.sh",

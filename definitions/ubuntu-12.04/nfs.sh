@@ -1,1 +1,0 @@
-../.ubuntu/nfs.sh
